@@ -3,7 +3,7 @@ local config = {
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
-    channel = "nightly", -- "stable" or "nightly"
+    channel = "stable", -- "stable" or "nightly"
     version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
     branch = "main", -- branch name (NIGHTLY ONLY)
     commit = nil, -- commit hash (NIGHTLY ONLY)
@@ -15,6 +15,20 @@ local config = {
     --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
     --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     -- },
+  },
+    -- Set dashboard header
+  header = {
+    " ",
+    " ",
+    " ",
+    "    ███    ██ ██    ██ ██ ███    ███",
+    "    ████   ██ ██    ██ ██ ████  ████",
+    "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
+    "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
+    "    ██   ████   ████   ██ ██      ██",
+    " ",
+    " ",
+    " ",
   },
 
   -- Set colorscheme
@@ -210,7 +224,7 @@ local config = {
 
   -- Diagnostics configuration (for vim.diagnostics.config({}))
   diagnostics = {
-    virtual_text = true,
+    virtual_text = false,
     underline = true,
   },
 
