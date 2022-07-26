@@ -33,7 +33,6 @@ local config = {
 
   -- Set colorscheme
   colorscheme = "gruvbox",
-  --colorscheme = "nightfox",
 
   -- Override highlight groups in any theme
   highlights = {
@@ -67,8 +66,9 @@ local config = {
       termguicolors = true,
 
       cursorline = true,
+      colorcolumn = '101',
+     -- ruler = true,
       hidden = true,
-
       mouse = "a",
     },
     g = {
