@@ -31,9 +31,6 @@ local config = {
     " ",
   },
 
-  -- Set colorscheme
-  colorscheme = "gruvbox",
-
   -- Override highlight groups in any theme
   highlights = {
     -- duskfox = { -- a table of overrides
@@ -45,35 +42,6 @@ local config = {
       highlights.Normal = { fg = C.fg, bg = C.bg }
       return highlights
     end,
-  },
-
-  -- set vim options here (vim.<first_key>.<second_key> =  value)
-  options = {
-    opt = {
-      relativenumber = false, -- sets vim.opt.relativenumber
-      expandtab = true,
-      smarttab = true,
-      shiftwidth = 4,
-      tabstop = 4,
-
-      hlsearch = true,
-      incsearch = true,
-      ignorecase = true,
-      smartcase = true,
-
-      wrap = false,
-      fileencoding = 'utf-8',
-      termguicolors = true,
-
-      cursorline = true,
-      colorcolumn = '101',
-     -- ruler = true,
-      hidden = true,
-      mouse = "a",
-    },
-    g = {
-      mapleader = " ", -- sets vim.g.mapleader
-    },
   },
 
   -- Default theme configuration
@@ -239,12 +207,6 @@ local config = {
       --   },
       -- },
     },
-  },
-
-  -- Diagnostics configuration (for vim.diagnostics.config({}))
-  diagnostics = {
-    virtual_text = false,
-    underline = true,
   },
 
   mappings = {
