@@ -32,7 +32,8 @@ local config = {
   },
 
   -- Set colorscheme
-  colorscheme = "default_theme",
+  colorscheme = "gruvbox",
+  --colorscheme = "nightfox",
 
   -- Override highlight groups in any theme
   highlights = {
@@ -51,6 +52,24 @@ local config = {
   options = {
     opt = {
       relativenumber = false, -- sets vim.opt.relativenumber
+      expandtab = true,
+      smarttab = true,
+      shiftwidth = 4,
+      tabstop = 4,
+
+      hlsearch = true,
+      incsearch = true,
+      ignorecase = true,
+      smartcase = true,
+
+      wrap = false,
+      fileencoding = 'utf-8',
+      termguicolors = true,
+
+      cursorline = true,
+      hidden = true,
+
+      mouse = "a",
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
