@@ -21,6 +21,13 @@
      -- ruler = true,
       hidden = true,
       mouse = "a",
+      softtabstop = 4,
+      autoindent = true,
+      smartindent = true,
+      showcmd = true,
+      wildmenu = true,
+      wildmode="list:longest,full",
+      showmatch = true,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader

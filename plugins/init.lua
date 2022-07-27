@@ -11,4 +11,10 @@ return {
     { "ethanholz/nvim-lastplace" ,
         config = require("user.plugins.nvim-lastplace"),
     },
+    { "catppuccin/nvim", as = "catppuccin" ,
+        config = require("user.plugins.catppuccin"),
+    },
+    { "sainnhe/sonokai" ,
+        config = require("user.plugins.sainnhe"),
+    },
 }
