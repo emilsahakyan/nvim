@@ -18,9 +18,9 @@
 
       cursorline = true,
       colorcolumn = '101',
-     -- ruler = true,
       hidden = true,
-      mouse = "a",
+
+      mouse ="",
       softtabstop = 4,
       autoindent = true,
       smartindent = true,
