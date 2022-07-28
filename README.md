@@ -1,2 +1,2 @@
 # nvim
-neo vim lua configurations
+Neo vim configuration bases on AstroNvim.
