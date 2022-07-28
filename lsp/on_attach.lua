@@ -1,0 +1,3 @@
+-- add to the server on_attach function
+-- on_attach = function(client, bufnr)
+-- end,

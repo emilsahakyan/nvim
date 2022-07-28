@@ -17,4 +17,5 @@ return {
     { "sainnhe/sonokai" ,
         config = require("user.plugins.sainnhe"),
     },
+    { "onsails/lspkind.nvim" },
 }
