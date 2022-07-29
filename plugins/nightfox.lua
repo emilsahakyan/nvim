@@ -5,7 +5,8 @@ return function()
                                 comments = "italic",
                                 keywords = "bold",
                                 types = "italic,bold",
-                        }
-                }
+                        },
+                        dim_inactive = true
+                },
         })
 end
