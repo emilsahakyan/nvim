@@ -1,2 +1,1 @@
-# nvim
-Neo vim configuration bases on AstroNvim.
+# nvim configuration.
