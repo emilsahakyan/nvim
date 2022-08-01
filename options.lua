@@ -26,7 +26,7 @@
       smartindent = true,
       showcmd = true,
       wildmenu = true,
-      wildmode="list:longest,full",
+      wildmode="longest,list,full",
       showmatch = true,
     },
     g = {

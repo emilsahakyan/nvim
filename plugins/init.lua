@@ -30,5 +30,8 @@ return {
     { "sainnhe/sonokai" ,
         config = require("user.plugins.sainnhe"),
     },
+    { "ray-x/lsp_signature.nvim" ,
+        config = require("user.plugins.lsp_signature"),
+    },
     { "onsails/lspkind.nvim" },
 }
