@@ -28,6 +28,7 @@
       wildmenu = true,
       wildmode="longest,list,full",
       showmatch = true,
+
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
