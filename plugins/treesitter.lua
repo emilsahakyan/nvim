@@ -1,6 +1,6 @@
 return {
   -- A list of parser names, or "all"
-  ensure_installed = { "lua", "python", "verilog", "make", "cmake", "regex", "vim", "cpp" },
+  ensure_installed = { "lua", "python", "verilog", "make", "cmake", "regex", "vim", "cpp", "bash" },
   --auto_install = true,
 
   highlight = {
