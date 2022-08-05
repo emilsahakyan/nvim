@@ -37,3 +37,6 @@ _Note: change via `colorscheme.lua`_
 
 
 __Note:__ The configurations for the default (AstroNvim) and the custome plugins are split into separate config files for easy expansion and maintenance.
+
+#### Automatically install and configure Nvim
+https://github.com/emilsahakyan/misc/tree/main/nvim
