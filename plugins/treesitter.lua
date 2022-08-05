@@ -1,7 +1,8 @@
 return {
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua", "python", "make", "cmake", "regex", "vim", "verilog"},
-  auto_install = true,
+  ensure_installed = { },
+  --ensure_installed = { "c", "lua", "python", "make", "cmake", "regex", "vim", "verilog"},
+  --auto_install = true,
 
   highlight = {
     -- `false` will disable the whole extension
