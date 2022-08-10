@@ -38,6 +38,7 @@ return {
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.commands{} end},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.configurations{} end},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.variables{} end},
+    ["<leader>mk"] = {"<cmd>make -j`nproc` <cr>", desc = "Make -j Nproc"},
   },
   t = {
     -- setting a mapping to false will disable it
