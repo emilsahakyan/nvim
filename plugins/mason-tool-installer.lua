@@ -1,3 +1,3 @@
 return {
-    ensure_installed = { "prettier", "stylua" },
+    ensure_installed = {},
 }
