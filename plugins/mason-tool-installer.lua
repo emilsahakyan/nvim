@@ -1,3 +1,3 @@
 return {
-    ensure_installed = {},
+    ensure_installed = {"cpptools", "debugpy"},
 }
