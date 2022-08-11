@@ -29,6 +29,8 @@
       wildmode="longest,list,full",
       showmatch = true,
 
+      autochdir=true,
+
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
