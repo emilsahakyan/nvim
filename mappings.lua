@@ -39,6 +39,8 @@ return {
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.configurations{} end},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.variables{} end},
     ["<leader>mk"] = {"<cmd>make -j`nproc` <cr>", desc = "Make -j Nproc"},
+    ["<leader>md"] = {"<cmd>make -j`nproc` debug <cr>", desc = "Make -j Nproc Debug"},
+    ["<leader>mc"] = {"<cmd>make clean <cr>", desc = "Make clean"},
   },
   t = {
     -- setting a mapping to false will disable it
