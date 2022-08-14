@@ -1,4 +1,5 @@
 return function()
+ -- python 
   require('dap').adapters.python = {
     type = 'executable';
     command = string.format("/home/%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("USER"));
@@ -18,9 +19,10 @@ return function()
         -- debugpy supports launching an application with a different interpreter then the one used to launch debugpy itself.
         -- The code below looks for a `venv` or `.venv` folder in the current directly and uses the python within.
         -- You could adapt this - to for example use the `VIRTUAL_ENV` environment variable.
-        -- Installed using the follwoing commands
+        -- Can be installed using the follwoing commands
           -- python -m venv /home/$USER/python/virtualenvs/debugpy
           -- /home/$USER/python/virtualenvs/debugpy/bin/python -m pip install debugpy
+          -- or via LSP DAP tools
         local cwd = vim.fn.getcwd()
         local pythonPath = string.format("/home/%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("USER"));
         if vim.fn.executable(pythonPath) == 1 then -- links to /usr/bin/python3
@@ -32,6 +34,45 @@ return function()
         end
       end;
     },
+  }
+
+  -- C++
+  require('dap').adapters.cppdbg = {
+    id = 'cppdbg',
+    type = 'executable',
+    command = '/home/emil/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+  }
+  require('dap').configurations.cpp = {
+    {
+      name = "Launch file",
+      type = "cppdbg",
+      request = "launch",
+      program = function()
+        return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+      end,
+      cwd = '${workspaceFolder}',
+      stopOnEntry = true,
+      args = {},
+      setupCommands = {
+        {
+          text = '-enable-pretty-printing',
+          description =  'enable pretty printing',
+          ignoreFailures = false
+        },
+      }
+    },
+    --{
+    --  name = 'Attach to gdbserver :1234',
+    --  type = 'cppdbg',
+    --  request = 'launch',
+    --  MIMode = 'gdb',
+    --  miDebuggerServerAddress = 'localhost:1234',
+    --  miDebuggerPath = '/usr/bin/gdb',
+    --  cwd = '${workspaceFolder}',
+    --  program = function()
+    --    return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    --  end,
+    --},
   }
   -- Change icons
   --vim.fn.sign_define('DapBreakpoint', {text='🟥', texthl='', linehl='', numhl=''})
