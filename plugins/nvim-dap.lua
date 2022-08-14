@@ -2,7 +2,7 @@ return function()
  -- python 
   require('dap').adapters.python = {
     type = 'executable';
-    command = string.format("/home/%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("USER"));
+    command = string.format("%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("HOME"));
     args = { '-m', 'debugpy.adapter' };
   }
   require('dap').configurations.python = {
@@ -20,11 +20,11 @@ return function()
         -- The code below looks for a `venv` or `.venv` folder in the current directly and uses the python within.
         -- You could adapt this - to for example use the `VIRTUAL_ENV` environment variable.
         -- Can be installed using the follwoing commands
-          -- python -m venv /home/$USER/python/virtualenvs/debugpy
-          -- /home/$USER/python/virtualenvs/debugpy/bin/python -m pip install debugpy
+          -- python -m venv $HOME/python/virtualenvs/debugpy
+          -- $HOME/python/virtualenvs/debugpy/bin/python -m pip install debugpy
           -- or via LSP DAP tools
         local cwd = vim.fn.getcwd()
-        local pythonPath = string.format("/home/%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("USER"));
+        local pythonPath = string.format("%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("$HOME"));
         if vim.fn.executable(pythonPath) == 1 then -- links to /usr/bin/python3
           return pythonPath
         elseif vim.fn.executable(cwd .. '/.venv/bin/python') == 1 then
@@ -40,7 +40,7 @@ return function()
   require('dap').adapters.cppdbg = {
     id = 'cppdbg',
     type = 'executable',
-    command = '/home/emil/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+    command = string.format("%s/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7", os.getenv("$HOME"));
   }
   require('dap').configurations.cpp = {
     {
