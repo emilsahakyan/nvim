@@ -1,7 +1,7 @@
 return function()
   require('dap').adapters.python = {
     type = 'executable';
-    command = string.format("/home/%s/python/virtualenvs/debugpy/bin/python", os.getenv("USER"));
+    command = string.format("/home/%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("USER"));
     args = { '-m', 'debugpy.adapter' };
   }
   require('dap').configurations.python = {
@@ -22,7 +22,7 @@ return function()
           -- python -m venv /home/$USER/python/virtualenvs/debugpy
           -- /home/$USER/python/virtualenvs/debugpy/bin/python -m pip install debugpy
         local cwd = vim.fn.getcwd()
-        local pythonPath = string.format("/home/%s/python/virtualenvs/debugpy/bin/python", os.getenv("USER"));
+        local pythonPath = string.format("/home/%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("USER"));
         if vim.fn.executable(pythonPath) == 1 then -- links to /usr/bin/python3
           return pythonPath
         elseif vim.fn.executable(cwd .. '/.venv/bin/python') == 1 then
