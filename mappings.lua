@@ -15,8 +15,8 @@ return {
     ["<leader>a"] = { "<cmd>Alpha<cr>", desc = "Alpha Dashboard" }, --  instead of 'd'
     -- DAP
     ["<F5>"] = {"<cmd>lua require'dap'.continue()<cr>", desc = "Continue"},
-    ["<F6>"] = {"<cmd>lua require'dap'.step_over()<cr>", desc = "Step over"},
-    ["<F7>"] = {"<cmd>lua require'dap'.step_into()<cr>", desc = "Step into"},
+    ["<F6>"] = {"<cmd>lua require'dap'.step_into()<cr>", desc = "Step into"},
+    ["<F7>"] = {"<cmd>lua require'dap'.step_over()<cr>", desc = "Step over"},
     ["<F8>"] = {"<cmd>lua require'dap'.step_out()<cr>", desc = "Step out" },
     ["<Leader>b"] = {"<cmd>lua require'dap'.toggle_breakpoint()<cr>", desc = "Toggle Breakpoint"},
     ["<Leader>B"] = {"<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>", desc = "Set Breakpoint w/ condition"},
