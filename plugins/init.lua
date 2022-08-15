@@ -46,4 +46,5 @@ return {
         config = require("user.plugins.nvim-dap-virtual-text"),
     },
     { "onsails/lspkind.nvim" },
+    { "kdheepak/lazygit.vim" },
 }
