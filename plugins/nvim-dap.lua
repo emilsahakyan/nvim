@@ -24,7 +24,7 @@ return function()
           -- $HOME/python/virtualenvs/debugpy/bin/python -m pip install debugpy
           -- or via LSP DAP tools
         local cwd = vim.fn.getcwd()
-        local pythonPath = string.format("%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("$HOME"));
+        local pythonPath = string.format("%s/.local/share/nvim/mason/packages/debugpy/venv/bin/python", os.getenv("HOME"));
         if vim.fn.executable(pythonPath) == 1 then -- links to /usr/bin/python3
           return pythonPath
         elseif vim.fn.executable(cwd .. '/.venv/bin/python') == 1 then
@@ -40,7 +40,7 @@ return function()
   require('dap').adapters.cppdbg = {
     id = 'cppdbg',
     type = 'executable',
-    command = string.format("%s/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7", os.getenv("$HOME"));
+    command = string.format("%s/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7", os.getenv("HOME"));
   }
   require('dap').configurations.cpp = {
     {
