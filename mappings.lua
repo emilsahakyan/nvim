@@ -23,8 +23,8 @@ return {
     ["<Leader>lp"] = {"<cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<cr>", desc = "Set Breakpoint w/ log point"},
     ["<Leader>dr"] = {"<cmd>lua require'dap'.repl.open()<cr>", desc = " Repl open"},
     ["<Leader>dl"] = {"<cmd>lua require'dap'.run_last()<cr>", desc = "Run last"},
-    ["<leader>dn"] = {function() require'dap'.run_to_cursor() end, desc = "Run to cursor"},
-    ["<leader>dc"] = {function() require'dap'.terminate() end, desc = "Terminate"},
+    ["<leader>dc"] = {function() require'dap'.run_to_cursor() end, desc = "Run to cursor"},
+    ["<leader>dt"] = {function() require'dap'.terminate() end, desc = "Terminate"},
     ["<leader>dR"] = {function() require'dap'.clear_breakpoints() end, desc = "Clear Breakpoints"},
     ["<leader>de"] = {function() require'dap'.set_exception_breakpoints({"all"}) end, desc = "Set Exeption Breakpoint"},
     ["<leader>di"] = {function() require'dap'.ui.widgets.hover() end, desc = "Widget hover"},
@@ -32,6 +32,9 @@ return {
     ["<leader>dk"] = {"<cmd>lua require\'dap\'.up()<CR>zz)", desc = "Up"},
     ["<leader>dj"] = {"<cmd>lua require\'dap\'.down()<CR>zz)", desc = "Down"},
     ["<leader>dr"] = {"<cmd>lua require\'dap\'.repl.toggle({}, \"vsplit\")<CR><C-w>l)", desc = "Repl Toggle"},
+    -- DAP UI
+    ["<leader>du"] = {function() require'dapui'.toggle() end, desc = "Toggle DAP UI"},
+
     -- Telescope DAP
     ["<leader>fd"] = {function() require'telescope'.extensions.dap.list_breakpoints{} end, desc = "List Breakpoints"},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.frames{} end},

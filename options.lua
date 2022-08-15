@@ -29,7 +29,7 @@
       wildmode="longest,list,full",
       showmatch = true,
 
-      autochdir=true,
+      --autochdir=true,
 
     },
     g = {
