@@ -6,7 +6,7 @@ return {
     -- Text formatting related
     ["<F2>"] = {"<cmd>set spell <cr>", desc = "Set spell" },
     ["<F3>"] = {"<cmd>set nospell <cr>", desc = "No spell"},
-    ["<F4>"] = {"<cmd>noh <cr>", desc = "No highlight"},
+   -- ["<F4>"] = {"<cmd>noh <cr>", desc = "No highlight"},
     ["<Tab>"]  = {"%", desc = "Matching pair"},
     ["<leader>\""] = {"viW<esc>a\"<esc>gvo<esc>i\"<esc>gvo<esc>3l", desc = "Quote under cursor"},
     ["<leader>\'"] = {"viW<esc>a\'<esc>gvo<esc>i\'<esc>gvo<esc>3l", desc = "Quote under cursor"},
@@ -34,16 +34,18 @@ return {
     ["<leader>dr"] = {"<cmd>lua require\'dap\'.repl.toggle({}, \"vsplit\")<CR><C-w>l)", desc = "Repl Toggle"},
     -- DAP UI
     ["<leader>du"] = {function() require'dapui'.toggle() end, desc = "Toggle DAP UI"},
-
     -- Telescope DAP
     ["<leader>fd"] = {function() require'telescope'.extensions.dap.list_breakpoints{} end, desc = "List Breakpoints"},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.frames{} end},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.commands{} end},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.configurations{} end},
     --["<leader>fs"] = {function() require'telescope'.extensions.dap.variables{} end},
+    -- Make
     ["<leader>mk"] = {"<cmd>make -j`nproc` <cr>", desc = "Make -j Nproc"},
     ["<leader>md"] = {"<cmd>make -j`nproc` debug <cr>", desc = "Make -j Nproc Debug"},
     ["<leader>mc"] = {"<cmd>make clean <cr>", desc = "Make clean"},
+    -- Override toggle terminal for python (python3)
+    ["<leader>tp"] = { function() astronvim.toggle_term_cmd "python3" end, desc = "ToggleTerm python" }
   },
   t = {
     -- setting a mapping to false will disable it
