@@ -28,8 +28,14 @@
       wildmenu = true,
       wildmode="longest,list,full",
       showmatch = true,
-
+      
       --autochdir=true,
+
+      foldmethod = "indent",
+      --foldlevel = 20,
+      --foldmethod = "expr",
+      --foldexpr = "nvim_treesitter#foldexpr()",
+
 
     },
     g = {
