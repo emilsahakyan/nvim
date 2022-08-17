@@ -1,7 +1,7 @@
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   return {
     opt = {
-      relativenumber = false, -- sets vim.opt.relativenumber
+      relativenumber = true, -- sets vim.opt.relativenumber
       expandtab = true,
       smarttab = true,
       shiftwidth = 4,
