@@ -45,6 +45,6 @@ return {
     { "theHamsta/nvim-dap-virtual-text",
         config = require("user.plugins.nvim-dap-virtual-text"),
     },
-    { "onsails/lspkind.nvim" },
-    { "kdheepak/lazygit.vim" },
+    --{ "onsails/lspkind.nvim" },
+    --{ "kdheepak/lazygit.vim" },
 }

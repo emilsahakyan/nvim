@@ -31,10 +31,10 @@
       
       --autochdir=true,
 
-      foldmethod = "indent",
-      --foldlevel = 20,
-      --foldmethod = "expr",
-      --foldexpr = "nvim_treesitter#foldexpr()",
+      --foldmethod = "indent",
+      foldlevel = 5,
+      foldmethod = "expr",
+      foldexpr = "nvim_treesitter#foldexpr()",
 
 
     },
