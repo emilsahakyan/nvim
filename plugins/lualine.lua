@@ -7,11 +7,9 @@ return function()
                         section_separators = '', --{ left = '', right = ''},
                         --padding = 1,
                         --always_divide_middle = true,
-                        --section_separators = { left = '', right = ''},
-                        --component_separators = ''
                 },
                 sections = {
-                        lualine_c = {'%=', {'filename', file_status=true, path=3}}
+                        lualine_c = {'%=', {'filename', file_status=true, path=3}},
                 },
         })
 end

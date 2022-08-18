@@ -28,11 +28,11 @@
       wildmenu = true,
       wildmode="longest,list,full",
       showmatch = true,
-      
+
       --autochdir=true,
 
       --foldmethod = "indent",
-      foldlevel = 5,
+      foldlevel = 7,
       foldmethod = "expr",
       foldexpr = "nvim_treesitter#foldexpr()",
 
