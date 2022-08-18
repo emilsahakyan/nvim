@@ -1,3 +1,3 @@
 return {
-    ensure_installed = {"cpptools", "debugpy", "prettier", "stylua"},
+  ensure_installed = { "cpptools", "debugpy", "prettier", "stylua", "pylint" },
 }
