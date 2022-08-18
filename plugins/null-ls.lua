@@ -8,12 +8,12 @@ return function(config)
     --null_ls.builtins.formatting.rufo,
     null_ls.builtins.formatting.prettier,
     null_ls.builtins.formatting.stylua,
-    null_ls.builtins.formatting.verible_verilog_format,
+    --null_ls.builtins.formatting.verible_verilog_format,
 
     -- Set a linter
     --null_ls.builtins.diagnostics.rubocop,
+    --null_ls.builtins.diagnostics.verible,
     null_ls.builtins.diagnostics.pylint,
-    null_ls.builtins.diagnostics.verible,
   }
   -- set up null-ls's on_attach function
   config.on_attach = function(client)
