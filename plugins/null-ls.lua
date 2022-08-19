@@ -8,6 +8,8 @@ return function(config)
     --null_ls.builtins.formatting.rufo,
     null_ls.builtins.formatting.prettier,
     null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.yapf,
+    --null_ls.builtins.formatting.clang_format,
     --null_ls.builtins.formatting.verible_verilog_format,
 
     -- Set a linter

@@ -45,7 +45,7 @@ return {
     ["<leader>md"] = {"<cmd>make -j`nproc` debug <cr>", desc = "Make -j Nproc Debug"},
     ["<leader>mc"] = {"<cmd>make clean <cr>", desc = "Make clean"},
     -- Override toggle terminal for python (python3)
-    ["<leader>tp"] = { function() astronvim.toggle_term_cmd "python3" end, desc = "ToggleTerm python" }
+    ["<leader>tp"] = { function() astronvim.toggle_term_cmd "python3" end, desc = "ToggleTerm python" },
   },
   t = {
     -- setting a mapping to false will disable it
