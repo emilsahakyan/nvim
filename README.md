@@ -1,4 +1,4 @@
-# My Nvim configuration
+# Nvim configuration
 
 Based on [AstroNvim](https://astronvim.github.io/).
 

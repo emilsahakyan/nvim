@@ -3,8 +3,8 @@ return function()
                 options = {
                         theme = 'nord',
                         icons_enabled = true,
-                        component_separators = '', -- { left = '', right = ''},
-                        section_separators = '', --{ left = '', right = ''},
+                        component_separators = '',-- { left = '', right = ''},
+                        section_separators = { left = '', right = ''},
                         --padding = 1,
                         --always_divide_middle = true,
                 },
