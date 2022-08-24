@@ -30,14 +30,14 @@
       showmatch = true,
 
       --autochdir=true,
+      --guicursor="n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50",
 
       --foldmethod = "indent",
       foldlevel = 7,
       foldmethod = "expr",
       foldexpr = "nvim_treesitter#foldexpr()",
-
-
     },
+
     g = {
       mapleader = " ", -- sets vim.g.mapleader
     },
