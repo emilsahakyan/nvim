@@ -46,6 +46,8 @@ return {
     ["<leader>mc"] = {"<cmd>make clean <cr>", desc = "Make clean"},
     -- Override toggle terminal for python (python3)
     ["<leader>tp"] = { function() astronvim.toggle_term_cmd "python3" end, desc = "ToggleTerm python" },
+    -- hop -easyMotion
+    ["<leader>k"] = {"<cmd>lua require'hop'.hint_words()<cr>", desc="Hop hint words"},
   },
   t = {
     -- setting a mapping to false will disable it

@@ -3,15 +3,6 @@ return {
     -- Disable default plugins as follows:
     -- ["goolord/alpha-nvim"] = { disable = true },
 
-    -- You can also add new plugins here as well:
-    -- { "andweeb/presence.nvim" },
-    -- {
-        --   "ray-x/lsp_signature.nvim",
-        --   event = "BufRead",
-        --   config = function()
-            --     require("lsp_signature").setup()
-            --   end,
-            -- },
     { "nvim-lualine/lualine.nvim",
         config = require("user.plugins.lualine"),
     },
@@ -45,6 +36,11 @@ return {
     { "theHamsta/nvim-dap-virtual-text",
         config = require("user.plugins.nvim-dap-virtual-text"),
     },
-    --{ "onsails/lspkind.nvim" },
+    { "phaazon/hop.nvim", branch = 'v2',
+        config = require("user.plugins.hop"),
+    },
+    { "folke/todo-comments.nvim",
+        config = require("user.plugins.todo-comments"),
+    },
     --{ "kdheepak/lazygit.vim" },
 }
