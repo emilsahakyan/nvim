@@ -9,7 +9,7 @@ return function()
                         --always_divide_middle = true,
                 },
                 sections = {
-                        lualine_c = {'%=', {'filename', file_status=true, path=1}},
+                        lualine_c = {'%=', {'filename', file_status=true, path=3}},
                 },
         })
 end
