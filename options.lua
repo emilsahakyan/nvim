@@ -44,7 +44,5 @@
 
     g = {
       mapleader = " ", -- sets vim.g.mapleader
-      --do_filetype_lua = 0, -- use filetype.lua
-      did_load_filetypes = 1, -- don't use filetype.vim
     },
   }
