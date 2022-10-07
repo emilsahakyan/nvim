@@ -2,6 +2,6 @@
 return {
   n = {
     -- ["<leader>lf"] = false -- disable formatting keymap
-    ["<leader>lf"] = { function() vim.lsp.buf.formatting_sync(nil, 5000) end, desc = "Format code" }
+    --["<leader>lf"] = { function() vim.lsp.buf.formatting_sync(nil, 5000) end, desc = "Format code" }
   },
 }

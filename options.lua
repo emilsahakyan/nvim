@@ -6,6 +6,7 @@ return {
     smarttab = true,
     shiftwidth = 4,
     tabstop = 4,
+    showtabline = 2, -- always display tabline
 
     hlsearch = true,
     incsearch = true,
@@ -34,7 +35,7 @@ return {
     --showmode = false, -- Disable showing modes in command line
     --pumheight = 10, -- Height of the pop up menu
 
-    --autochdir=true,
+    --autochdir = true,
     --guicursor="n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50",
 
     --foldmethod = "indent",
