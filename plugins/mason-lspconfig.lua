@@ -7,8 +7,6 @@ return {
     "jsonls",
     "verible",
     "bashls",
-    "cpptools",
-    "debugpy",
   },
   automatic_installation = true,
 }
