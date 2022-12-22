@@ -1,4 +1,0 @@
--- deprecated in AstroNvim 1.8
---return {
---    ensure_installed = { "sumneko_lua", "pyright", "clangd", "cmake", "jsonls", "verible", "bashls" },
---}
