@@ -8,6 +8,7 @@ return {
   { "ray-x/lsp_signature.nvim", config = require "user.plugins.lsp_signature" },
   { "folke/todo-comments.nvim", config = require "user.plugins.todo-comments" },
   { "phaazon/hop.nvim", branch = "v2", config = require "user.plugins.hop" },
+  { "shaunsingh/nord.nvim", config = require "user.plugins.shaunsingh" },
   -- replaced: now using Mason
   --{ "mfussenegger/nvim-dap", config = require "user.plugins.nvim-dap" },
   --{ "rcarriga/nvim-dap-ui", config = require "user.plugins.nvim-dap-ui" },

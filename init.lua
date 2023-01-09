@@ -34,10 +34,11 @@ local config = {
     colors = {
       fg = "#abb2bf",
     },
-    plugins = { -- enable or disable extra plugin highlighting
+    plugins = {
       aerial = true,
       beacon = false,
       bufferline = true,
+      cmp = true,
       dashboard = true,
       highlighturl = true,
       hop = false,
@@ -50,6 +51,7 @@ local config = {
       rainbow = true,
       symbols_outline = false,
       telescope = true,
+      treesitter = true,
       vimwiki = false,
       ["which-key"] = true,
     },

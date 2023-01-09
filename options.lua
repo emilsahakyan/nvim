@@ -13,7 +13,7 @@ return {
     ignorecase = true,
     smartcase = true,
 
-    wrap = false,
+    wrap = true,
     fileencoding = "utf-8",
     termguicolors = true,
 
