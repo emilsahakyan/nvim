@@ -1,4 +1,4 @@
-return {
-  ensure_installed = { "debugpy", "cpptools" },
-  automatic_installation = true,
-}
+require("mason-nvim-dap").setup({
+    ensure_installed = { "python", "cppdbg" },
+    automatic_setup = false
+})
