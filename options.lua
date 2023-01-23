@@ -3,7 +3,7 @@ return {
   opt = {
     relativenumber = true, -- sets vim.opt.relativenumber
     expandtab = true,
-    smarttab = true,
+    smarttab = false,
     shiftwidth = 4,
     tabstop = 4,
     showtabline = 2, -- always display tabline
