@@ -5,7 +5,7 @@ return {
     args = { "-m", "debugpy.adapter" },
   },
 
-  cpp = {
+  cppdbg = {
     id = "cppdbg",
     type = "executable",
     command = string.format(
