@@ -7,7 +7,7 @@ The __Features__ section in [AstroNvim](https://astronvim.github.io/) github pag
 ## Installation
 
 #### Option 1 - automatically install and configure Nvim
-https://github.com/emilsahakyan/misc/tree/main/nvim
+https://github.com/emilsahakyan/misc
 
 #### Option 2 - manual installation
 
