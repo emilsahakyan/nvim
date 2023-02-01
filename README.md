@@ -14,7 +14,7 @@ https://github.com/emilsahakyan/misc
 1. Follow insturctions in AstroNvim [Installation and Basic Setup](https://github.com/AstroNvim/AstroNvim) page.
 2. `git clone https://github.com/emilsahakyan/nvim.git ~/.config/nvim/lua/user` 
 
-__Note:__ The configurations for the default (AstroNvim) and the custome plugins are split into separate config files for easy expansion and maintenance.
+__Note:__ The configurations for the default (AstroNvim) and the custom plugins are split into separate config files for easy expansion and maintenance.
 
 
 `nvim +checkhealth` - install missing/required tools/binaries, e.g. python
