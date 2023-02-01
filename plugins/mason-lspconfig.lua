@@ -5,7 +5,7 @@ return {
     "clangd",
     "cmake",
     "jsonls",
-    "verible",
+    --"verible",
     "bashls",
   },
   automatic_installation = true,
