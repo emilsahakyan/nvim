@@ -2,7 +2,7 @@
 
 Custom Neovim configuration based on [AstroNvim](https://astronvim.github.io/).
 
-The __Features__ section in [AstroNvim](https://astronvim.github.io/) github page provides details about the installed plugins.  
+The __Features__ section in [AstroNvim](https://astronvim.github.io/) github page provides details about the installed main plugins.  
 
 ## Installation 
 1. Follow insturctions in AstroNvim [Installation and Basic Setup](https://github.com/AstroNvim/AstroNvim) page.
