@@ -17,7 +17,7 @@ https://github.com/emilsahakyan/misc
 __Note:__ The configurations for the default (AstroNvim) and the custom plugins are split into separate config files for easy expansion and maintenance.
 
 
-`nvim +checkhealth` - install missing/required tools/binaries, e.g. python
+Always `nvim +checkhealth` - install missing/required tools/binaries, e.g. python
 
 ## Complie flags for cpp
 In order to configure the Language Server Protocol ([LSP](https://microsoft.github.io/language-server-protocol/)) work for cpp with [clang](https://clangd.llvm.org ) create file `compile_flags.txt` with appropriate flags for the project, for example:
